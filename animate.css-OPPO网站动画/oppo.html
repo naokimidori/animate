@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>oppo官网首页</title>
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/oppo.css">
+</head>
+
+<body>
+	<div class="dowebok">
+		<div class="hd"></div>
+
+		<div class="bd">
+			<div class="slide"></div>
+
+			<div class="area1">
+				<h2></h2>
+				<div class="box">
+					<div class="bg1 animated fadeInUp"></div>
+				</div>
+			</div>
+
+			<div class="area2">
+				<h2></h2>
+				<ul class="list1">
+					<li class="item item1"></li>
+					<li class="item item2"></li>
+					<li class="item item3"></li>
+					<li class="item item4"></li>
+					<li class="item item5"></li>
+					<li class="item item6"></li>
+					<li class="item item7"></li>
+					<li class="item item8"></li>
+				</ul>
+			</div>
+
+			<div class="area3">
+				<h2></h2>
+				<ul class="list2">
+					<li class="item item1"></li>
+					<li class="item item2"></li>
+					<li class="item item3"></li>
+					<li class="item item4"></li>
+					<li class="item item5"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ft">
+			<ul class="ft-service">
+				<li class="item item1"></li>
+				<li class="item item2"></li>
+				<li class="item item3"></li>
+				<li class="item item4"></li>
+				<li class="item item5"></li>
+			</ul>
+			<div class="ft-links"></div>
+		</div>
+	</div>
+	<script src="./js/jquery.min.js"></script>
+	<script>
+		document.onscroll = function () {
+			let sTop = document.documentElement.scrollTop;
+			console.log(sTop);
+
+			if (sTop > 1000) {
+				//1 2 5
+				$(".area2 .list1 .item1").addClass("animated bounceInLeft");
+				$(".area2 .list1 .item2").addClass("animated zoomIn");
+				$(".area2 .list1 .item5").addClass("animated bounceInRight");
+			}
+			if (sTop > 1200) {
+				//3 6 7
+				$(".area2 .list1 .item3").addClass("animated rotateInDownLeft");
+				$(".area2 .list1 .item6").addClass("animated fadeInUp");
+				$(".area2 .list1 .item7").addClass("animated slideInRight");
+			}
+			if (sTop > 1400) {
+				//4 8
+				$(".area2 .list1 .item4").addClass("animated fadeInUp");
+				$(".area2 .list1 .item8").addClass("animated rotateInDownRight");
+			}
+			if (sTop > 2000) {
+				//1 2 3 4
+				$(".area3 .list2 .item1").addClass("animated bounceInLeft");
+				$(".area3 .list2 .item2").addClass("animated bounceInLeft");
+				$(".area3 .list2 .item3").addClass("animated bounceInLeft");
+				$(".area3 .list2 .item4").addClass("animated bounceInLeft");
+				//5
+				$(".area3 .list2 .item5").addClass("animated bounceInRight");
+			}
+			if (sTop > 2800) {
+				let sec = 1;
+				let timer = window.setInterval(function(){
+					$(".ft .ft-service .item"+sec).addClass("animated fadeInUp delay-"+sec+"s").css("display","inline-block");
+					sec++;
+					if(sec>5){
+						clearInterval(timer);
+					}
+				},400)
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <style>
+        #box{
+            width:600px;height:600px;
+            background: url("./bike/t0000.jpg"),url("./bike/t0001.jpg"),url("./bike/t0002.jpg"),url("./bike/t0003.jpg"),url("./bike/t0004.jpg"),url("./bike/t0005.jpg"),url("./bike/t0006.jpg"),url("./bike/t0007.jpg"),url("./bike/t0008.jpg"),url("./bike/t0009.jpg"),url("./bike/t0010.jpg"),url("./bike/t0011.jpg");
+        }
+        @keyframes bike{
+            0%{background: url("./bike/t0001.jpg")};
+            10%{background: url("./bike/t0002.jpg")};
+            20%{background: url("./bike/t0003.jpg")};
+            30%{background: url("./bike/t0004.jpg")};
+            40%{background: url("./bike/t0005.jpg")};
+            50%{background: url("./bike/t0006.jpg")};
+            60%{background: url("./bike/t0007.jpg")};
+            70%{background: url("./bike/t0008.jpg")};
+            80%{background: url("./bike/t0009.jpg")};
+            90%{background: url("./bike/t0010.jpg")};
+            100%{background: url("./bike/t0011.jpg")};
+        }
+        @keyframes move{
+            0%{transform: translate(0) rotateY(0deg)}
+            49.9%{transform: translate(800px) rotateY(0deg)}
+            50%{transform: translate(800px) rotateY(180deg)}
+            99.9%{transform: translate(0) rotateY(180deg)}
+            100%{transform: translate(0) rotateY(0deg)}
+            
+        }
+        #box{
+            animation: bike 0.2s linear infinite,move 3s linear infinite;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <div class="n1"></div>
+        <div class="n2"></div>
+        <div class="n3"></div>
+    </div>
+    <style>
+        #box{
+            width: 200px;height:200px;border:10px solid #000;
+            -transition: all 10s ease 0s;
+            border-radius: 50%;
+            display: flex;
+            position: relative;
+        }
+        #box>div{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform-origin: left center;
+        }
+        #box .n1{
+            width:105px;height:10px;
+            background: rgb(255, 153, 0); 
+            transform: rotate(-90deg);
+        }
+        #box .n2{
+            width:97px;height:10px;
+            background: rgb(255, 153, 0); 
+            transform: rotate(30deg);
+        }
+        #box .n3{
+            width:97px;height:10px;
+            background: rgb(255, 153, 0); 
+            transform: rotate(150deg);
+        }
+        /* #box:hover{ */
+            /*
+             transform: translate(50%,50%); 
+              transform: scale(0.5,0.5)
+            */
+            /* transform: rotate(90deg); */
+            /* transform: rotateY(60deg); */
+            /* transform: rotate(-3600deg);
+            border-radius: 50%; 
+        } */
+
+        
+        @keyframes move{
+            0%{transform: translate(0) rotate(0deg);}
+            50%{transform:translate(1200px) rotate(3600deg);}
+            100%{transform: translate(0) rotate(0deg);}
+        }
+        #box{
+            animation: move 10s ease 1s infinite;
+        }
+    </style>
+</body>
+</html>

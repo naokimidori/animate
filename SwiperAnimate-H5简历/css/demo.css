@@ -1,0 +1,312 @@
+html,body{
+    background: darkgray;
+}
+@keyframes loop{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+@keyframes opc{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes xz{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.swiper-container {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+}
+.nextBtn{
+    position: absolute;
+    bottom: 0;
+    left:45%;
+    width:20%;
+    z-index: 1000;
+}
+.nextBtn img{
+    width:50%;
+}
+#musicDiv{
+    width:12%;
+    height:45px;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 999;
+    background: url("../img/musicplayer.svg") no-repeat;
+    background-size: 100%;
+}
+.musicPlay{
+    animation: xz 2s linear infinite;
+}
+.swiper-slide{
+    background-color: rgb(247, 245, 245);
+}
+._01-bg{
+    width: 100%;
+    height:100%;
+    background: url("../img/01-bg.png") no-repeat;
+    background-size: 130% 100%;
+    position: absolute;
+    left:-20%;
+}
+._01-title{
+    width: 60%;
+    height:36%;
+    background: url("../img/01-title.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:10%;
+    right:1%;
+}
+._01-title p{
+    color:#fff;
+    background: #000;
+    text-align: center;
+    margin:110% auto 0;
+    font-size: 28px;
+    width:85%;
+}
+._01-circle{
+    width:50%;
+    height:30%;
+    background: url("../img/01-circle.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:65%;
+    right:5%;
+    animation: opc 5s ease forwards,loop 3s ease infinite;
+}
+._01-words{
+    text-align: center;
+    line-height: 80%;
+    position: absolute;
+    top:70%;
+    right:16%;
+}
+._01-words .name{
+    font-size: 30px;
+}
+._01-words .job{
+    font-size: 20px;
+}
+._01-words .adr{
+    font-size: 14px;
+}
+._02-bg,._03-bg{
+    background: url("../img/02-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:100%;
+    position: absolute;
+    right:-25%;
+}
+._02-title,._03-title,._04-title,._06-title{
+    width: 50%;
+    height:20%;
+    position: absolute;
+    top:3%;
+    left:3%;
+}
+._02-title .n1,._03-title .n1,._04-title .n1,._06-title .n1{
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-left: 4%;      
+    font-family: "Microsoft YaHei", "SimSun", sans-serif !important;
+}
+._02-title .n2,._03-title .n2,._04-title .n2,._06-title .n2{
+    height:25%;
+    background: #000;
+}
+._02-title .n3,._03-title .n3,._04-title .n3,._06-title .n3{
+    color:#fff;
+    position: absolute;
+    bottom: 4%;
+    left:8%;
+    font-size: 16px; 
+}
+._02-pic{
+    background: url("../img/messi.jpg") no-repeat -48px 0px;
+    position: absolute;
+    background-size: 180% 100%;
+    width: 45%;
+    height: 32%;
+    border: 4px solid #f8963a;
+    top: 23%;
+    left: 5%;
+}
+._02-name{
+    position: absolute;
+    top:64%;
+    left:7%;
+}
+._02-name .n1{
+    font-weight: bold;
+    font-size: 24px;
+}
+._02-name .n2,._02-name .n3,._02-name .n4{
+    font-size: 18px;
+}
+._03-title .n3{
+    font-size: 20px;
+    bottom: 0;
+}
+._03-content{
+    width:55%;
+    position: absolute;
+    top:23%;
+    left:7%;
+    font-size: 24px;
+    line-height:2rem;
+}
+._04-bg{
+    background: url("../img/04-bg.png") no-repeat;
+    background-size: 100% 40%;     
+    width:100%;
+    height:100%;
+}
+
+._04-title{
+    width: 100%;
+    text-align: center;
+    left:0;
+    top:12%;
+}
+._04-title .n1{
+    margin-left: 0;
+}
+._04-title .n2{
+    width:50%;
+    position: absolute; 
+    left:25%;
+}
+._04-title .n3{
+    left:36%;
+}
+._04-title .n4{
+    left:30%;
+    color:#fff;
+    position: absolute;
+    bottom: 4%;
+}
+._04-title .list{
+    position: absolute;
+    top:85%;
+    left:25%;
+    line-height: 1rem;
+    font-size: 1.2rem;
+}
+._04-box{
+    width:90%;
+    height:40%;
+    position: absolute;
+    top:50%;
+    left:4%;
+    border:3px solid #000;
+    border-radius: 20px;
+}
+._04-content{
+    width:80%;
+    position: absolute;
+    top:50%;
+    left:12%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+._05-content{
+    position: absolute;
+    width:80%;
+    height:60%;
+    top:30%;
+    left:10%;
+    
+}
+._05-content .n1{
+    background: url("../img/messi2.jpg") no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:50%;
+}
+._05-content .n11{
+    background: url("../img/cxk.gif") no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:50%;
+}
+._05-content .n2{
+    font-size:1.6rem;
+    font-weight: bold;
+    position: absolute;
+    left:33%;
+    top:50%;
+}
+._05-content .n3{
+    position: absolute;
+    top:64%;
+    line-height: 1.6rem;
+}
+._06-title{
+    width:35%;
+}
+._06-pic{
+    background: url("../img/wechat.jpg") no-repeat;
+    position: absolute;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 28%;
+    top: 23%;
+    left: 3%;
+}
+._06-wechat{
+    position: absolute;
+    top: 48%;
+    left: 6%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+._06-tel{
+    position: absolute;
+    top:60%;
+    left:1%;
+    width:30%;
+    height:10%;
+    background: url("../img/tel.png") no-repeat;
+    background-size: 50% 70%;
+}
+._06-tel .n1{
+    position: absolute;
+    left:50%;
+    top:-14%;
+    font-size: 1.3rem;
+}
+._06-email{
+    position: absolute;
+    top:70%;
+    left:2%;
+    width:30%;
+    height:10%;
+    background: url("../img/email.png") no-repeat;
+    background-size: 50% 70%;
+}
+._06-email .n1{
+    position: absolute;
+    left:52%;
+    top:-14%;
+    font-size: 1.3rem;
+}
+._06-words{
+    position: absolute;
+    top:77%;
+    left:5%;
+    height:20%;
+}
+._06-words .n1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+._06-words .n2{
+    font-size: 1.2rem;
+}

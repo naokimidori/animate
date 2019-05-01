@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <style>
+        #box{
+            width:240px;height:240px;
+            background: url("./run/1.jpeg"),url("./run/2.jpeg"),url("./run/3.jpeg"),url("./run/4.jpeg"),url("./run/5.jpeg"),url("./run/6.jpeg"),url("./run/7.jpeg"),url("./run/8.jpeg");
+            animation: run 0.5s linear infinite,move 5s linear infinite; 
+        }
+        @keyframes run{
+            0%{background: url("./run/1.jpeg");}
+            12.5%{background: url("./run/2.jpeg");}
+            25%{background: url("./run/3.jpeg");}
+            37.5%{background: url("./run/4.jpeg");}
+            50%{background: url("./run/5.jpeg");}
+            62.5%{background: url("./run/6.jpeg");}
+            75%{background: url("./run/7.jpeg");}
+            87.5%{background: url("./run/8.jpeg");}
+            100%{background: url("./run/1.jpeg");}
+        }
+        @keyframes move{
+            0%{transform: translate(0,0) rotate(0deg);}
+            24.9%{transform: translate(600px,0) rotate(0deg);}
+            25%{transform: translate(600px,0) rotate(90deg);}
+            49.9%{transform: translate(600px,400px) rotate(90deg);}
+            50%{transform: translate(600px,400px) rotate(180deg) rotatex(360deg);}
+            74.9%{transform: translate(0px,400px) rotate(180deg) rotatex(360deg);}
+            75%{transform: translate(0px,400px) rotate(270deg) rotatex(0deg);}
+            99.9%{transform: translate(0,0) rotate(270deg) rotateX(0deg);}
+            100%{transform: translate(0,0) rotate(0deg);}
+        }
+    </style>
+</body>
+</html>
